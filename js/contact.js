@@ -3,7 +3,7 @@ $(function() {
     $("input,textarea").jqBootstrapValidation({
         preventSubmit: true,
         submitError: function($form, event, errors) {
-            // additional error messages or events
+            //alert(errors.undefined.join('\n'));
         },
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
