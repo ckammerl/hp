@@ -15,6 +15,7 @@ h6 {
     font-weight: 700;
 }
 
+
 /*btn customization*/
 .btn.btn-default.btn-lg.custom {
     width: 145px;
@@ -101,32 +102,20 @@ h6 {
     letter-spacing: 2px;
 }
 
-
-#portfolio, #contact {
-    padding: 50px 0;
+/*sections layout*/
+#contact {
+    padding: 50px 0 50px;
 }
 
-.content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;
+#about {
+    padding: 50px 0 80px;
 }
 
-.content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-}
-
-#img-pigly, #img-gameoflife, #img-cabin {
-    border-radius: 4px;
-    border: solid black;
+#about h2, #contact h2 {
+    padding-bottom: 30px;
 }
 
 /*about section*/
-
-#about {
-    padding-top: 50px;
-}
 
 .about {
     line-height: 1.4;
@@ -136,7 +125,27 @@ h6 {
 }
 
 .about p {
-    margin: 0 0 10px;
+    margin: 0 2px 10px;
+}
+
+/*portfolio section*/
+
+.content-section-a, .content-section-b, .content-section-c {
+    padding: 80px 0;
+    margin: 0 45px 0;
+}
+
+.content-section-a {
+    border-top: 2px solid #e7e7e7;
+}
+
+.content-section-c {
+    border-bottom: 2px solid #e7e7e7;
+}
+
+#img-pigly, #img-gameoflife, #img-cabin, #img-wheat {
+    border-radius: 4px;
+    border: 2px solid #000;
 }
 
 /*portfolio img*/
@@ -169,9 +178,7 @@ a.portfolio-link:hover {
     font-size: 18px;
 }
 
-#contact {
-    background-color: #f8f8f8;
-}
+/*banner footer*/
 
 .banner {
     padding: 100px 0;
@@ -230,6 +237,7 @@ footer {
 .portfolio-modal .modal-content {
     padding: 100px 0;
     min-height: 100%;
+    margin: 120px;
     border: 0;
     border-radius: 0;
     text-align: center;
@@ -241,6 +249,10 @@ footer {
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
+}
+
+.portfolio-modal .modal-content p, .portfolio-modal .modal-content ul {
+     font-size: 14px;
 }
 
 .portfolio-modal .modal-content img {
@@ -285,7 +297,6 @@ footer {
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
 }
-
 
 .img-body {
     display: table;
