@@ -130,22 +130,22 @@ h6 {
 
 /*portfolio section*/
 
-.content-section-a, .content-section-b, .content-section-c {
+.content-section-a, .content-section-b, .content-section-c, .content-section-d {
     padding: 80px 0;
     margin: 0 45px 0;
 }
 
-.content-section-c {
+.content-section-d {
     border-top: 2px solid #e7e7e7;
 }
 
-.content-section-b {
+.content-section-a {
     border-bottom: 2px solid #e7e7e7;
 }
 
-#img-pigly, #img-gameoflife, #img-cabin, #img-wheat {
+#img-pigly, #img-gameoflife, #img-cabin, #img-wheat, #img-schemmer {
     border-radius: 4px;
-    border: 2px solid #000;
+    border: 1.5px solid #000;
 }
 
 /*portfolio img*/
