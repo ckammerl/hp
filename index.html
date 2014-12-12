@@ -129,12 +129,12 @@
             <div class="row">
                  <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading"><a target="_blank" href="https://mschemmer.herokuapp.com/">Marianne Schemmer</a></h2>
+                    <h2 class="section-heading"><a target="_blank" href="https://mschemmer.herokuapp.com/wie-ich-arbeite">Marianne Schemmer</a></h2>
                     <p class="lead">Dynamic business website for a client in the healthcare sector. Design by <a target="_blank" href="http://www.wunschkunst.de/">Wunschkunst</a>.<br>
                    </p>
                 </div>
                  <div class="col-lg-5 col-sm-pull-6  col-sm-6">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <img id="img-schemmer" class="img-responsive" src="img/schemmer.png" alt="">
                     </a>
                 </div>
@@ -160,7 +160,7 @@
                    </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <img id="img-wheat" class="img-responsive" src="img/chili.png" alt="">
                     </a>
                 </div>
@@ -208,14 +208,20 @@
             <div class="row">
                 <div class="col-lg-5 col-sm-6">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading"><a target="_blank" href="https://github.com/ckammerl/game-of-life">Game of Life</a></h2>
-                    <p class="lead">Object-oriented Javascript implementation of Conway's Game of Life.<br><br>
-                    Interact with the game by creating an initial configuration and observe how it evolves.</p>
+                    <h2 class="section-heading"><a target="_blank" href="https://github.com/ckammerl/game-of-life">Conway's Game of Life</a></h2>
+                    <p class="lead">Object-oriented Javascript (JS & jQuery) implementation of Conway's Game of Life.<br><br>
+                    Interact with the game by creating an initial configuration and observe how it evolves. Every cell interacts with its eight neighbours:</p>
+                    <ul class="lead">
+                    <li>Any live cell with fewer than two live neighbours dies, as if caused by under-population.</li>
+                    <li>Any live cell with two or three live neighbours lives on to the next generation.</li>
+                    <li>Any live cell with more than three live neighbours dies, as if by overcrowding.</li>
+                    <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.</li>
+                    </ul>
                 </div>
-                    <div class="col-lg-5 col-lg-offset-2 col-sm-6">
-                     <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <img id="img-gameoflife" class="img-responsive" src="img/gameoflife_new.png" alt="">
-                    </a>
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6 custom">
+                    <canvas id="canvas" class="img-responsive"></canvas>
+                    <button type="submit" id="run_animation" class="btn btn-success btn-lg custom">Start/Stop</button>
+                    <button type="submit" id="reset_game" class="btn btn-success btn-lg custom">New Game</button>
                 </div>
             </div>
             <!-- .row -->
@@ -387,47 +393,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2><a target="_blank" href="https://github.com/ckammerl/game-of-life">Conway's Game of Life</a></h2>
-                            <hr class="star-primary">
-                            <div class="img-body">
-                                <div class="modal-img-inline">
-                                    <img src="img/gameoflife-1.png" id="img-gameoflife" class="img-responsive" alt="">
-                                </div>
-                                <div class="modal-img-inline">
-                                    <img src="img/gameoflife-a.png" id="img-gameoflife" class="img-responsive" alt="">
-                                </div>
-                                <div class="modal-img-inline">
-                                    <img src="img/gameoflife-b.png" id="img-gameoflife" class="img-responsive" alt="">
-                                </div>
-                            </div>
-                            <p>Object-oriented Javascript implementation of <a target= "_blank" href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a>.</p>
-
-                            <p>The "game" is a zero-player game, meaning that its evolution is determined by its initial state, requiring no further input. One interacts with the Game of Life by creating an initial configuration and observing how it evolves.</p>
-                            <ul class="list-inline item-details">
-                                <li>Date:
-                                    <strong>August 2014</strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal">
                 <div class="lr">
@@ -479,7 +445,7 @@
             </div>
         </div>
     </div>
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-content">
         <div class="close-modal" data-dismiss="modal">
             <div class="lr">
@@ -491,7 +457,7 @@
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
                     <div class="modal-body">
-                        <h2><a target="_blank" href="https://mschemmer.herokuapp.com/">Marianne Schemmer</a></h2>
+                        <h2><a target="_blank" href="https://mschemmer.herokuapp.com/wie-ich-arbeite">Marianne Schemmer</a></h2>
                         <hr class="star-primary">
                         <div class="img-body">
                             <div class="modal-img-inline">
@@ -509,6 +475,7 @@
                             <li>Ruby</li>
                             <li>refinery CMS</li>
                             <li>HTML, CSS</li>
+                            <li>Heroku</li>
                         </ul>
                         <ul class="list-inline item-details">
                             <li>Client:
@@ -541,6 +508,11 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/homepage.js"></script>
+    <!-- Game of Life -->
+    <script src="js/initialize.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/model.js"></script>
+    <script src="js/view.js"></script>
 
 </body>
 
