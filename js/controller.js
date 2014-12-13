@@ -60,6 +60,8 @@ Game.Controller.prototype.stopTimerAnimation = function () {
 }
 
 Game.Controller.prototype.resetGame = function() {
+  this.stopTimerAnimation();
+  this._timerActive = false;
   var newUserInputGridWidth = 20
   var newUserInputGridHeight = 20
   var newCanvas = $('#canvas').attr({width: 400, height: 400});
